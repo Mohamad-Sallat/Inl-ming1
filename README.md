@@ -48,3 +48,49 @@ Primärnyklar:
 Främmande nycklar:
 -Kund_ID i bestallning pekar på kund (Varje bestallning hör till exakt en kund.
 -Order_ID och ISBN i Orderrad pekar på bestallning respektiv BOK (Vearje Orderrad kopplar ihop enen viss beställning med en viss bok.
+
+
+
+# Inlämning 2 
+
+## Namn
+Mohamad Sallat
+
+Det här är fortsättningen på min inlämning 1.
+Jag har fortsatt att arbeta med databasen **bokhandel**.
+
+I den här uppgiften har jag lagt till mer testdata och gjort flera SQL-frågor och funktioner i databasen.
+
+## Det jag har gjort
+Jag har:
+
+- lagt till fler kunder, beställningar och orderrader
+- hämtat data med `SELECT`
+- filtrerat data med `WHERE`
+- sorterat data med `ORDER BY`
+- uppdaterat data med `UPDATE`
+- tagit bort data med `DELETE`
+- använt `ROLLBACK` för att ångra ändringar
+- använt `INNER JOIN` och `LEFT JOIN`
+- använt `GROUP BY` och `HAVING`
+- skapat ett index på e-post
+- lagt till en constraint så att pris inte får vara 0 eller mindre
+- skapat en loggtabell
+- skapat två triggers
+
+## Trigger 1
+Den första triggern minskar lagersaldot när en ny orderrad läggs till.
+
+## Trigger 2
+Den andra triggern loggar när en ny kund registreras i databasen.
+
+## Backup och restore
+Jag har också gjort backup och restore i MySQL Workbench.
+
+För backup använde jag:
+**Server -> Data Export**
+
+För restore använde jag:
+**Server -> Data Import**
+
+Efter restore testade jag databasen med `SELECT` för att se att tabeller och data fanns kvar.
